@@ -18,8 +18,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"var headerValue = pm.response.json();",
-											"pm.environment.set('magentoAccessToken', headerValue);"
+											"var body = pm.response.json();",
+											"pm.environment.set('magentoAccessToken', body);"
 										],
 										"type": "text/javascript"
 									}
